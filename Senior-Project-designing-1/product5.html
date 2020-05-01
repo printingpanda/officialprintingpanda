@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="styleproduct.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" media="screen and (min-width: 601px)" href="desktopstyle.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="stylephone.css">
+
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+	<div class="homepage-layout">
+		<div class='cartbutton'>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <!-- Identify your business so that you can collect the payments. -->
+        <input type="hidden" name="business" value="stanley.rose.amanda@gmail.com">
+
+        <!-- Specify a PayPal shopping cart View Cart button. -->
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="display" value="1">
+
+        <!-- Display the View Cart button. -->
+        <input type="image" name="submit"
+            src="cart.png"
+          alt="Add to Cart" class="cartbutton">
+        <img alt="" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+      </div>
+		<div class="sidecolumn">
+			<!-- This will always stay so keep this class and things that are in it so you dont have to code it again-->
+			<a href='index.html'><img src="PrintingPandalogoandname and color scheme.png" class="logotypeface"></a>
+        <div class="dropdown">
+        <p id="shopdropdown"><a href='shop.html'>Shop</a></p>
+        <p id="aboutdropdown"><a href='about.html'>About</a></p>
+        <p id="contactdropdown"><a href='contact.html'>Contact</a></p>
+        <!--<p id="featureddropdown"><a href='featured.html'>Featured</a></p>-->
+        </div>
+      </div>
+      <div class="productpage">
+        <div class="product-image">
+          <img src="prototype5.png">
+          <img src="colors.jpg" class="colors">
+        </div>
+        <div class="info">
+          <h1 class="title">Phone Holder</h1>
+          <h2>Fifth Edition</h2>
+          <h3>$14.99</h3>
+        </div>
+        <div class="paypal">
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YLJF2YQN67VL4">
+          <table>
+          <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+            <option value="Iphone 6/7/8">Iphone 6/7/8 $14.99 USD</option>
+            <option value="Iphone X">Iphone X $15.99 USD</option>
+            <option value="Iphone 11">Iphone 11 $15.99 USD</option>
+          </select> </td></tr>
+          <tr><td><input type="hidden" name="on1" value="Colors">Colors</td></tr><tr><td><select name="os1">
+            <option value="Clear">Clear </option>
+            <option value="White">White </option>
+            <option value="Black">Black </option>
+            <option value="Red">Red </option>
+            <option value="Blue">Blue </option>
+            <option value="Green">Green </option>
+            <option value="Light Blue">Light Blue </option>
+            <option value="Orange">Orange </option>
+            <option value="Gray">Gray </option>
+            <option value="Purple">Purple </option>
+          </select> </td></tr>
+          </table>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
+
+	      </div>
+    </div>
+  </body>
+</html>

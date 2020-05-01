@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" media="screen and (min-width: 601px)" href="desktopstyle.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="stylephone.css">
+
+</head>
+
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+	</script>
+	<script src="script.js">
+
+	</script>
+	<div class="homepage-layout">
+		<div class='cartbutton'>
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<!-- Identify your business so that you can collect the payments. -->
+				<input type="hidden" name="business" value="stanley.rose.amanda@gmail.com">
+
+        <!-- Specify a PayPal shopping cart View Cart button. -->
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="display" value="1">
+
+        <!-- Display the View Cart button. -->
+        <input type="image" name="submit"
+            src="cart.png"
+          alt="Add to Cart" class="cartbutton">
+        <img alt="" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+      </div>
+      <div class="sidecolumn"> <!-- This will always stay so keep this class and things that are in it so you dont have to code it again-->
+        <a href='index.html'><img src="PrintingPandalogoandname and color scheme.png" class="logotypeface"></a>
+        <div class="dropdown">
+        <p id="shopdropdown"><a href='shop.html'>Shop</a></p>
+        <p id="aboutdropdown"><a href='about.html'>About</a></p>
+        <p id="contactdropdown"><a href='contact.html'>Contact</a></p>
+        <!--<p id="featureddropdown"><a href='featured.html'>Featured</a></p>-->
+        </div>
+      </div>
+      <div class="sloganwithdescription">
+        <h1 class="slogan" id="slogan"> We turn 2D dreams into 3D reality.</h1> <!--The store made to pay for a girl's college tution and for all of her dreams-->
+        <h3 class="description"> A store of 3D products designed by a highschool senior for her senior project.</h3>
+      <div class="versionofproduct">
+        <script src="three.min.js"></script>
+        <script src="stl_viewer.min.js"></script>
+        <script src="webgl_detector.js"></script>
+        <script src="Projector.js"></script>
+        <script src="CanvasRenderer.js "></script>
+        <script src="OrbitControls.js"></script>
+          <div id="stl_cont"></div>
+          <script>
+	          var stl_viewer=new StlViewer(document.getElementById("stl_cont"),{
+               auto_rotate:true,
+               canvas_height:500,
+               mouse_zoom:false,
+               zoom:205,
+               models:[
+               {id:0, filename:"Phone holder Prototype number 1 (1).stl",rotationx:-1.6,view_edges:true,}]});
+            
+          </script>
+          
+      </div>
+      <div class="instagram">
+        <div class='embedsocial-instagram' data-ref="9f79870c54641d0d87ac57b4350ef24c4b8f5824"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

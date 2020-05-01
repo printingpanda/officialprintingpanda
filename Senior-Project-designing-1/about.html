@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="desktopstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="stylephone.css">
+    
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+    <div class="homepage-layout">
+      <div class='cartbutton'>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <!-- Identify your business so that you can collect the payments. -->
+        <input type="hidden" name="business" value="stanley.rose.amanda@gmail.com">
+
+        <!-- Specify a PayPal shopping cart View Cart button. -->
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="display" value="1">
+
+        <!-- Display the View Cart button. -->
+        <input type="image" name="submit"
+            src="cart.png"
+          alt="Add to Cart" class="cartbutton">
+        <img alt="" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+      </div>
+      <div class="sidecolumn"> <!-- This will always stay so keep this class and things that are in it so you dont have to code it again-->
+        <a href='index.html'><img src="PrintingPandalogoandname and color scheme.png" class="logotypeface"></a>
+        <div class="dropdown">
+        <p id="shopdropdown"><a href='shop.html'>Shop</a></p>
+        <p id="aboutdropdown"><a href='about.html'>About</a></p>
+        <p id="contactdropdown"><a href='contact.html'>Contact</a></p>
+       <!--<p id="featureddropdown"><a href='featured.html'>Featured</a></p>-->
+        </div>
+      </div>
+      <div class="sloganwithdescription">
+        <h1 class="slogan" id="slogan"> About</h1> <!--The store made to pay for a girl's college tution and for all of her dreams-->
+        <h3 class="description"> Printing Panda is an online store created by a highchool senior for her senior project.</h3>
+        <p class="picture"><img src="10162019 Amanda Stanley Senior Photos Finals (19).jpg"></p>
+        <h1 class="QA slogan">Common Q&A</h1> <!--The store made to pay for a girl's college tution and for all of her dreams-->
+        <h3 class="description questions">Why an online store and not anything else?</h3>
+        <h4 class="description">I wanted a way that I could do what I love doing (3D Printing) and pay my college tution.</h4>
+        <h3 class="description questions">What started this?</h3>
+        <h4 class="description">Here is a link to the orgin story of all of this <a href="https://docs.google.com/presentation/d/1GO-RXniCqXWEBAmpXURXAYZmMwTo282mtc3znejCJLc/edit?usp=sharing" class="link">Slide Show</a></h4>
+        <h4 class="description">For those who don't want to look through the slide show: This all started with a bet with my dad...</h4>
+        <h4 class="description">If you are like me, you always lose your phone, even when it is in your own pocket or in your hand. I’ve created a product for you: a phone holder that holds your phone on the side of your computer screen and has space for you to charge it and plug in headphones without the worry of it falling off the surface your computer is on. In the process to create my final design, I tinkered with seven different designs. Each one improved upon the three goals I’d set for the final product. They were having the ability to work for most phones and being adapt to newer models not yet available, being most efficient in terms of filament use, and being aesthetically pleasing. I’ve spent the last 3 years perfecting this design to be a product I could put on the market.</h4>         
+      </div>
+      
+    </div>
+  </body>
+</html>

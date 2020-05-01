@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="desktopstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="stylephone.css">
+    
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+    <div class="homepage-layout">
+      <div class='cartbutton'>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <!-- Identify your business so that you can collect the payments. -->
+        <input type="hidden" name="business" value="stanley.rose.amanda@gmail.com">
+
+        <!-- Specify a PayPal shopping cart View Cart button. -->
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="display" value="1">
+
+        <!-- Display the View Cart button. -->
+        <input type="image" name="submit"
+            src="cart.png"
+          alt="Add to Cart" class="cartbutton">
+        <img alt="" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+      </div>
+      <div class="sidecolumn"> <!-- This will always stay so keep this class and things that are in it so you dont have to code it again-->
+        <a href='index.html'><img src="PrintingPandalogoandname and color scheme.png" class="logotypeface"></a>
+        <div class="dropdown">
+        <p id="shopdropdown"><a href='shop.html'>Shop</a></p>
+        <p id="aboutdropdown"><a href='about.html'>About</a></p>
+        <p id="contactdropdown"><a href='contact.html'>Contact</a></p>
+        <p id="featureddropdown"><a href='featured.html'>Featured</a></p>
+        </div>
+      </div>
+      <div class="sloganwithdescription">
+        <h1 class="slogan" id="slogan">Featured</h1>
+        <div class="featureddesigns">
+          <p><img src="squirel.png" class="design1"> Poly Squirel</p>
+          <p><img src="design3.png"class="design1">Phone Holder</p>
+          <p><img src="plammatransparent.png" class="design1">Plamma</p>
+          <p><img src="penturtle.png" class="design1">Pen Turtle</p>
+          <p><img src="musicvolumething.png" class="design1 toobig">Volume Enhancer</p>
+          <p><img src="phoneholder.png" class="design1">Phone Holder</p>
+          <p><img src="cardcupcake.png" class="toobig bottom"><br> Card Holder</p>
+          <p><img src="shelf.png" class="toobig bottom"><br> Hex Shelf</p>
+          <p><img src="box.png" class="toobig bottom"><br> Box</p>
+
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
